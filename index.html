@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Asks user for their age and the day to see if they have work or a day off." />
+    <meta name="keywords" content="functions, conditionals" />
+    <meta name="author" content="Rodas Nega" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Work or Relax</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 style="text-align:center;">Hello, World!</h1>
+    <h3 style="text-align:center;">This webpage will determine whether you have to work or have a day off.</h3>
+    <form>
+      <label for="response"><strong>Enter your age:</strong></label>
+      <input type="text" id="response" size="2">
+      <br>
+      <label for="time"><strong>Enter the day:</strong></label>
+      <input type="text" id="time" size="2">
+      <br>
+      <br>
+      <button onclick="document.getElementById('response').innerHTML = shiftSchedule ()">Submit</button>
+      <br>
+      <br>
+      <img src="./images/Working.png" alt="Stick Person" width="200px" height="200px">
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
